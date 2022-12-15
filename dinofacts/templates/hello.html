@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% load humanize %}
+{% load dinotags    %}
+{% block content %}
+
+<h1>Iguanodon</h1>
+
+<p>
+  Iguanodon (iguana-tooth) were large herbivores. They weighed 
+  {{3080|intcomma}}kg ({{6800|intcomma}}lbs).
+  Wow, {{3080000|intword}} grams is a lot!
+
+</p>
+<p>{{dinosaurs|nth_letters:3}}</p>
+{% endblock content %}
